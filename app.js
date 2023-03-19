@@ -1,42 +1,29 @@
 
         let nickname = prompt("Please enter your name: ");
-        let gender = prompt("please select your gender: ");
+        let gender = prompt("please select your gender: (male/female)");
 
-        if(nickname != null){
 
-        if(gender =="male"){
+            while(gender != "male" && gender != "female"){
+                gender = prompt("please select your gender: (male/female)");
+            }
+            if(gender =="male"){
 
             alert("Hello, MR." + nickname + "!");
             }
             else if(gender == "female"){
-                alert("Hello, Mrs." + nickname + "!");
-            }
-            else {
-                alert("Hello, " + nickname + "!");
-            }
+            alert("Hello, Mrs." + nickname + "!");
         }
-        let temp = prompt("please choose what you wonna drink Hot or cold drink!!","hot");
+        
+        let typeOfDrink = prompt("please choose what you wonna drink Hot or cold drink!!","hot");
         let drink = prompt("Enter the name of the drink you like ... ");
 
         alert("your drink " + drink + " is getting prepared !");
 
         console.log("Hello " + nickname + " your order is "+ drink);
 
-    //     let num = prompt("enter a number berween 0 - 100");
-
-    //     while(num >100 || num <0 ){
-    //         num = prompt("enter a number berween 0 - 100");
-
-    //    }
-    //    alert("the number you entered is " + num)
-
-
-        // for(i=1;num >100 || num<0;i++){
-        //      num = prompt("enter a number berween 0 - 100");
-
-        // }
-        // alert("the number you entered is " + num)
-    
-        
-        
-    
+        let arr = [nickname , gender , typeOfDrink , drink]
+        for(let i =0 ; i<arr.length;i++){
+            
+            console.log(arr[i])
+        }
+   
