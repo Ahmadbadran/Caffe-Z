@@ -6,13 +6,13 @@
 
         if(gender =="male"){
 
-            document.getElementById("home").innerText = "Hello, MR." + nickname + "!";
+            alert("Hello, MR." + nickname + "!");
             }
             else if(gender == "female"){
-                document.getElementById("home").innerText = "Hello, Mrs." + nickname + "!";
+                alert("Hello, Mrs." + nickname + "!");
             }
             else {
-                document.getElementById("home").innerText = "Hello, " + nickname + "!";
+                alert("Hello, " + nickname + "!");
             }
         }
         let temp = prompt("please choose what you wonna drink Hot or cold drink!!","hot");
@@ -22,13 +22,20 @@
 
         console.log("Hello " + nickname + " your order is "+ drink);
 
-        let num = prompt("enter a number berween 0 - 100");
+    //     let num = prompt("enter a number berween 0 - 100");
 
-        for(i=1;num >100 || num<0;i++){
-             num = prompt("enter a number berween 0 - 100");
+    //     while(num >100 || num <0 ){
+    //         num = prompt("enter a number berween 0 - 100");
 
-        }
-        alert("the number you entered is " + num)
+    //    }
+    //    alert("the number you entered is " + num)
+
+
+        // for(i=1;num >100 || num<0;i++){
+        //      num = prompt("enter a number berween 0 - 100");
+
+        // }
+        // alert("the number you entered is " + num)
     
         
         
