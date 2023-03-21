@@ -1,5 +1,6 @@
 let nickname = prompt("Please enter your name: ");
 let gender = prompt("please select your gender: (male/female)");
+let ageB = prompt("please enter your age : ");
 
 
 function gen (gender){
@@ -28,6 +29,63 @@ for(let i =0 ; i<arr.length;i++){
 
     console.log(arr[i])
 }
+
+
+const currentDiv = document.getElementById("user");
+
+const newDiv = document.createElement("div");
+
+const paragraph = document.createElement("p");
+
+newDiv.appendChild(paragraph);
+
+const name1 = document.createTextNode("name : " + nickname);
+paragraph.appendChild(name1);
+
+const ul = document.createElement("ul");
+
+const li1 = document.createElement("li");
+const genType = document.createTextNode("Gender : " + gender);
+li1.appendChild(genType);
+ul.appendChild(li1);
+
+const li3 = document.createElement("li");
+const Age = document.createTextNode("Age : " + ageB);
+li3.appendChild(Age);
+li1.appendChild(li3);
+
+const li2 = document.createElement("li");
+const drinks = document.createTextNode("drink : " + drink);
+li2.appendChild(drinks);
+li3.appendChild(li2);
+
+newDiv.appendChild(ul);
+
+currentDiv.appendChild(newDiv);
+
+
+// document.body.onload = addElement;
+
+// function addElement() {
+//   // create a new div element
+//   const newDiv = document.createElement("div");
+
+//   // and give it some content
+//   const newContent = document.createTextNode("Hi there and greetings!");
+
+//   // add the text node to the newly created div
+//   newDiv.appendChild(newContent);
+//   const currentDiv = document.getElementById("user");
+//   document.body.insertBefore(newDiv,currentDiv);
+
+//   // add the newly created element and its content into the DOM
+//   // const currentDiv = document.getElementById("div1");
+//   // document.body.insertBefore(newDiv, currentDiv);
+// }
+// addElement();
+
+
+
 
 // function sanitise(x) {
 //     if (isNaN(x)) {
