@@ -176,3 +176,23 @@ section {
 .home .image-slider img:hover {
     transform: translateY(-2rem);
 }
+
+.stylingForm{
+    justify-content: center; 
+    align-items: center;
+    display: flex;
+    font-size:15px; 
+    
+}
+.stylingForm label{
+align-items: center;
+font-family: 'Courier New', Courier, monospace;
+font-weight: bolder;
+}
+#form {
+    background-color: rgba(202, 203, 153, 0.204);
+    padding: 100px;
+}
+#user{
+    background-color: rgba(202, 203, 153, 0.204);
+}
