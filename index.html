@@ -42,7 +42,28 @@
         <div class="row">
             <div class="content">
                 <h3>fresh coffee in the morning</h3>
-                <a href="#" class="btn">buy one now</a>
+                <div class="stylingForm">
+                <form  id="form">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="age">Age: </label><br>
+                    <input type="text" id="age" name="age"><br><br>
+                    <label for="gender">Gender:</label><br>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">male</label><br>
+                    <input type="radio" id="Female" name="gender" value="Female">
+                    <label for="Female">Female</label><br><br>
+                    <label for="hotOrCold">Hot or Cold :</label><br>
+                    <input type="checkbox" id="hotr" name="hot" value="hot">
+                    <label for="hot">hot</label><br>
+                    <input type="checkbox" id="coldr" name="cold" value="cold">
+                    <label for="cold">cold</label><br><br>
+                    <label for="drinkType">drinkType :</label><br>
+                    <input type="text" id="drinkType" name="drinkType"><br><br>
+                      
+                    <input class="btn" type="submit" value="Submit">
+                  </form>
+                </div> 
             </div>
             <div id="user"></div>
 
@@ -50,12 +71,14 @@
                 <img src="image/home-img-1.png" class="main-home-image" alt="">
             </div>
         </div>
+    
 
         <div class="image-slider">
             <img src="image/home-img-1.png" alt="">
             <img src="image/home-img-2.png" alt="">
             <img src="image/home-img-3.png" alt="">
         </div>
+        
     </section>
     <script src="app.js"></script>
 </body>
